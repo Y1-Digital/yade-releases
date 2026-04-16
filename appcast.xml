@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Y.A.D.E. Updates</title>
+    <link>https://y1-digital.github.io/yade-releases/appcast.xml</link>
+    <description>Over-the-air update feed for Y.A.D.E.</description>
+    <language>de</language>
+  </channel>
+</rss>
