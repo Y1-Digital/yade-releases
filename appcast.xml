@@ -5,7 +5,14 @@
     <link>https://y1-digital.github.io/yade-releases/appcast.xml</link>
     <description><![CDATA[Over-the-air update feed for Y.A.D.E.]]></description>
     <language>de</language>
-  <item><title>Version 2026.4.4</title><pubDate>Thu, 16 Apr 2026 18:05:51 +0000</pubDate><sparkle:version>2026041602</sparkle:version><sparkle:shortVersionString>2026.4.4</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Fixed</h4>
+  <item><title>Version 2026.4.5</title><pubDate>Thu, 16 Apr 2026 18:20:19 +0000</pubDate><sparkle:version>2026041603</sparkle:version><sparkle:shortVersionString>2026.4.5</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Sparkle rejected updates with "improperly signed and could not be</li>
+</ul>
+<p>validated" because `zip -r` dereferenced symlinks inside the bundle,</p>
+<p>breaking the Python.framework / Sparkle.framework layouts and thus</p>
+<p>the Apple Code Signature. `build.sh` now zips with `-y` to preserve</p>
+<p>symlinks, and the extracted bundle passes `codesign --verify`.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.5/Yade-2026.4.5.zip" sparkle:edSignature="cnK0Kwp/QYacM7XTdSgW7cnQbnV7c9Juwm/w2WJmQ0by24LpIx0xe1oQxSYaRLQezht+p8qeoCCaYd9v4gIcCQ==" length="211386480" type="application/octet-stream" /></item><item><title>Version 2026.4.4</title><pubDate>Thu, 16 Apr 2026 18:05:51 +0000</pubDate><sparkle:version>2026041602</sparkle:version><sparkle:shortVersionString>2026.4.4</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Fixed</h4>
 <ul>
 <li>App launch crashed with `ModuleNotFoundError: No module named</li>
 </ul>
