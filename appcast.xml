@@ -5,7 +5,54 @@
     <link>https://y1-digital.github.io/yade-releases/appcast.xml</link>
     <description><![CDATA[Over-the-air update feed for Y.A.D.E.]]></description>
     <language>de</language>
-  <item><title>Version 2026.4.8</title><pubDate>Thu, 16 Apr 2026 19:40:15 +0000</pubDate><sparkle:version>2026041606</sparkle:version><sparkle:shortVersionString>2026.4.8</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Added</h4>
+  <item><title>Version 2026.4.9</title><pubDate>Fri, 17 Apr 2026 07:30:06 +0000</pubDate><sparkle:version>2026041701</sparkle:version><sparkle:shortVersionString>2026.4.9</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Fixed</h4>
+<ul>
+<li>Overlay-Strich und Aufnahme-Pille waren nach dem Start unsichtbar,</li>
+</ul>
+<p>bis ein App-Event (z. B. Öffnen der Einstellungen) sie erzwang. Die</p>
+<p>Dock-Sichtbarkeits-Logik schaltete die Activation Policy zur Laufzeit</p>
+<p>um — das verdeckte das Overlay-Panel bis zum nächsten UI-Event.</p>
+<p>Jetzt bleibt die App über `LSUIElement=true` als Accessory-App</p>
+<p>gestartet, und der Dock-Toggle setzt nur Regular-Policy beim Start,</p>
+<p>wenn der Nutzer es aktiviert hat.</p>
+<ul>
+<li>Mikrofon-Berechtigung wurde beim ersten Start teils ohne Systemdialog</li>
+</ul>
+<p>abgelehnt. Y.A.D.E. fragt jetzt explizit über</p>
+<p>`AVCaptureDevice.requestAccessForMediaType_` an, damit macOS den</p>
+<p>Prompt zuverlässig zeigt.</p>
+<ul>
+<li>Silero VAD konnte das ONNX-Modell im Release-Bundle in manchen</li>
+</ul>
+<p>Konstellationen nicht finden. Der Lookup nutzt jetzt</p>
+<p>`NSBundle.mainBundle().resourcePath()` als stabilen Anker.</p>
+<h4>Added</h4>
+<ul>
+<li>`YADE_BUILD_VARIANT=dev` (Default in `run.sh`): baut parallel eine</li>
+</ul>
+<p>„Y.A.D.E. Dev.app" mit eigener Bundle-ID `de.y1.yade.dev`, damit</p>
+<p>macOS Dev-Permissions (Mikrofon, Bedienungshilfen) getrennt von der</p>
+<p>installierten Consumer-App verwaltet. Entwicklung stört damit die</p>
+<p>installierte Alltags-App nicht.</p>
+<h4>Added</h4>
+<ul>
+<li>Dock-Sichtbarkeit in den Einstellungen umschaltbar (Allgemein-Tab,</li>
+</ul>
+<p>Checkbox "Im Dock anzeigen"). Nutzer können jederzeit zwischen</p>
+<p>Dock-sichtbar und Menubar-only wechseln.</p>
+<h4>Changed</h4>
+<ul>
+<li>Y.A.D.E. erscheint beim Erststart jetzt sichtbar im Dock statt nur</li>
+</ul>
+<p>in der Menubar. Das verhindert, dass die App auf Maschinen mit</p>
+<p>vielen Menubar-Icons unauffindbar wirkt. Wer's weiterhin nur in der</p>
+<p>Menubar will, kann's in den Einstellungen deaktivieren.</p>
+<ul>
+<li>Onboarding Schritt 2 (API-Key): "Ohne Schlüssel fortfahren" ist</li>
+</ul>
+<p>jetzt ein vollwertiger Button neben "Mit Schlüssel weiter" statt</p>
+<p>einer leicht zu übersehenden Link-Zeile. Zusätzlich erklärt ein</p>
+<p>Hinweis, dass Y.A.D.E. ohne Key mit Rohtext funktioniert.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.9/Yade-2026.4.9.zip" sparkle:edSignature="MHGo0amqq1knzbBAQOIYdYot7yDCIqFwpyxJ6EjghKvamNCX/r/GNkOVbH5qNZOTZJ1m9GH05C5WkbdsILpGAg==" length="211616586" type="application/octet-stream" /></item><item><title>Version 2026.4.8</title><pubDate>Thu, 16 Apr 2026 19:40:15 +0000</pubDate><sparkle:version>2026041606</sparkle:version><sparkle:shortVersionString>2026.4.8</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Added</h4>
 <ul>
 <li>Dock-Sichtbarkeit in den Einstellungen umschaltbar (Allgemein-Tab,</li>
 </ul>
