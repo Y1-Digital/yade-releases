@@ -5,7 +5,24 @@
     <link>https://y1-digital.github.io/yade-releases/appcast.xml</link>
     <description><![CDATA[Over-the-air update feed for Y.A.D.E.]]></description>
     <language>de</language>
-  <item><title>Version 2026.4.16</title><pubDate>Tue, 21 Apr 2026 09:57:03 +0000</pubDate><sparkle:version>2026042104</sparkle:version><sparkle:shortVersionString>2026.4.16</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.16</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;color:#3e2723;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px;color-scheme:light"><strong style="color:#3e2723">⚠ Nach dem Update einmal Berechtigung erneuern</strong><br><span style="color:#3e2723">Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).</span><ol style="margin:8px 0 0 20px;padding:0;color:#3e2723"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
+  <item><title>Version 2026.4.17</title><pubDate>Tue, 21 Apr 2026 10:48:15 +0000</pubDate><sparkle:version>2026042105</sparkle:version><sparkle:shortVersionString>2026.4.17</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.17</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;color:#3e2723;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px;color-scheme:light"><strong style="color:#3e2723">⚠ Nach dem Update einmal Berechtigung erneuern</strong><br><span style="color:#3e2723">Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).</span><ol style="margin:8px 0 0 20px;padding:0;color:#3e2723"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
+<h4>Added</h4>
+<ul>
+<li>**Dock-Icon öffnet Preferences**: ein Klick auf das Dock-Symbol bringt</li>
+</ul>
+<p>jetzt das Einstellungsfenster nach vorne, statt stumm zu bleiben.</p>
+<ul>
+<li>**Installations-Hinweis**: beim Start aus dem Downloads-Ordner oder</li>
+</ul>
+<p>einer App-Translocation-Sandbox meldet Y.A.D.E. sich mit einer kurzen</p>
+<p>Schritt-für-Schritt-Anleitung, wie die App in den Programme-Ordner</p>
+<p>verschoben wird. Sonst leiden Updates und Berechtigungen.</p>
+<h4>Changed</h4>
+<ul>
+<li>**Sprachauswahl auf Deutsch und Englisch reduziert**. Die übrigen</li>
+</ul>
+<p>Whisper-Sprachen sind entfernt, weil sie in der aktuellen Pipeline</p>
+<p>ohnehin nicht validiert sind.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.17/Yade-2026.4.17.zip" sparkle:edSignature="0GV/AKb061c/hjtba8zQhwLbSBHS65cwn43ARdclInz4sO7PlTRVnsQGP77qgsWYCqTxJ1xYnDVI1iXlHwdnBw==" length="212981038" type="application/octet-stream" /></item><item><title>Version 2026.4.16</title><pubDate>Tue, 21 Apr 2026 09:57:03 +0000</pubDate><sparkle:version>2026042104</sparkle:version><sparkle:shortVersionString>2026.4.16</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.16</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;color:#3e2723;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px;color-scheme:light"><strong style="color:#3e2723">⚠ Nach dem Update einmal Berechtigung erneuern</strong><br><span style="color:#3e2723">Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).</span><ol style="margin:8px 0 0 20px;padding:0;color:#3e2723"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
 <h4>Added</h4>
 <ul>
 <li>**Hover-Hinweis am Idle-Overlay**: wer mit der Maus über den</li>
@@ -483,18 +500,5 @@
 </ul>
 <p>jetzt ein vollwertiger Button neben "Mit Schlüssel weiter" statt</p>
 <p>einer leicht zu übersehenden Link-Zeile. Zusätzlich erklärt ein</p>
-<p>Hinweis, dass Y.A.D.E. ohne Key mit Rohtext funktioniert.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.8/Yade-2026.4.8.zip" sparkle:edSignature="lgaqGcQ8LkzP0L+WacKY2C2V0UYpCCOoB/RUG/8scj/AWiZXtUYFoPQ9CN7qbkdxxmKapjzoHx9zBtnbJ1r7Bw==" length="211387950" type="application/octet-stream" /></item><item><title>Version 2026.4.7</title><pubDate>Thu, 16 Apr 2026 19:26:22 +0000</pubDate><sparkle:version>2026041605</sparkle:version><sparkle:shortVersionString>2026.4.7</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Fixed</h4>
-<ul>
-<li>Die App blieb in einem unbrauchbaren Zustand (Dock-Icon sichtbar,</li>
-</ul>
-<p>aber kein Menubar-Icon), wenn das Onboarding-Fenster über den roten</p>
-<p>Schließen-Knopf statt "Los geht's" beendet wurde. Jetzt beendet sich</p>
-<p>Y.A.D.E. in diesem Fall sauber, und das Onboarding erscheint beim</p>
-<p>nächsten Start erneut.</p>
-<h4>Documentation</h4>
-<ul>
-<li>`LIESMICH.md`: Hotkey-Beschreibung korrigiert (rechte Option-Taste</li>
-</ul>
-<p>statt Fn), primärer Modus "2× antippen" ergänzt, Modell-Auswahl in</p>
-<p>Einstellungen dokumentiert, API-Schlüssel klar als optional markiert.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.7/Yade-2026.4.7.zip" sparkle:edSignature="KU82yxo8VPaP5Zvg+pAB5gfgIWolnEIiPr1P5Gw4iFwYRJhmXJTzTpfiK+u8SrAykOi2Zv24b103WKYxzAJ8Cw==" length="211389901" type="application/octet-stream" /></item></channel>
+<p>Hinweis, dass Y.A.D.E. ohne Key mit Rohtext funktioniert.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.8/Yade-2026.4.8.zip" sparkle:edSignature="lgaqGcQ8LkzP0L+WacKY2C2V0UYpCCOoB/RUG/8scj/AWiZXtUYFoPQ9CN7qbkdxxmKapjzoHx9zBtnbJ1r7Bw==" length="211387950" type="application/octet-stream" /></item></channel>
 </rss>
