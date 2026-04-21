@@ -5,7 +5,55 @@
     <link>https://y1-digital.github.io/yade-releases/appcast.xml</link>
     <description><![CDATA[Over-the-air update feed for Y.A.D.E.]]></description>
     <language>de</language>
-  <item><title>Version 2026.4.12</title><pubDate>Mon, 20 Apr 2026 20:47:25 +0000</pubDate><sparkle:version>2026042001</sparkle:version><sparkle:shortVersionString>2026.4.12</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.12</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px"><strong>⚠ Nach dem Update einmal Berechtigung erneuern</strong><br>Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).<ol style="margin:8px 0 0 20px;padding:0"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
+  <item><title>Version 2026.4.13</title><pubDate>Tue, 21 Apr 2026 08:41:52 +0000</pubDate><sparkle:version>2026042101</sparkle:version><sparkle:shortVersionString>2026.4.13</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.13</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px"><strong>⚠ Nach dem Update einmal Berechtigung erneuern</strong><br>Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).<ol style="margin:8px 0 0 20px;padding:0"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
+<h4>Added</h4>
+<ul>
+<li>**Overlay-Position wählbar** (Allgemein → Overlay-Position): Oben</li>
+</ul>
+<p>(unter der Notch) oder Unten. Default ist „Automatisch": bei Dock</p>
+<p>unten sitzt das Overlay oben, bei Dock links/rechts unten —</p>
+<p>verhindert Überlappung mit dem Dock. Wechsel greift sofort ohne</p>
+<p>Neustart.</p>
+<ul>
+<li>**Mikrofon-Test in den Einstellungen** (Audio-Tab): Button</li>
+</ul>
+<p>„Mikrofon testen" startet einen Live-Level-Meter für das aktuell</p>
+<p>gewählte Eingabegerät. Wechselt man das Gerät während der Test</p>
+<p>läuft, springt der Meter direkt auf das neue Mikro.</p>
+<ul>
+<li>**Cmd+V / Cmd+C / Cmd+X / Cmd+A** funktionieren jetzt in allen</li>
+</ul>
+<p>Textfeldern (Onboarding, Einstellungen). Vorher ging nur</p>
+<p>Rechtsklick-Paste — als LSUIElement-App hatten wir kein Main-Menu</p>
+<p>mit Edit-Items, wodurch die Standard-Key-Equivalents nicht an die</p>
+<p>First-Responder-Textfelder geroutet wurden.</p>
+<ul>
+<li>**KI-Bereinigung wird automatisch aktiviert**, sobald ein gültiger</li>
+</ul>
+<p>API-Schlüssel eingegeben oder akzeptiert wird (Onboarding und</p>
+<p>Einstellungen). Vorher blieb der Toggle stehen, wenn man zuvor</p>
+<p>„Ohne Schlüssel fortfahren" geklickt hatte.</p>
+<h4>Changed</h4>
+<ul>
+<li>**Onboarding Schritt 3** zeigt das Test-Transkript jetzt als</li>
+</ul>
+<p>schreibgeschütztes Feedback-Label („so wurde dein Text erkannt")</p>
+<p>statt als editierbarer Textbereich. Das editierbare Feld hatte</p>
+<p>Nutzer irritiert, weil nicht klar war, dass sie dort nichts</p>
+<p>eingeben sollen.</p>
+<ul>
+<li>Versionsnummer wandert aus dem Allgemein-Tab in den</li>
+</ul>
+<p>Einstellungs-Fenstertitel, damit die neue Overlay-Position Platz</p>
+<p>findet.</p>
+<h4>Removed</h4>
+<ul>
+<li>**Rotes „Keine Sprache"-Overlay** komplett raus. Wenn während</li>
+</ul>
+<p>einer Aufnahme keine Sprache erkannt wird, bleibt der Equalizer</p>
+<p>einfach flach und das Overlay geht still zurück in den Idle-State</p>
+<p>— kein klebender roter Fehler mehr, der sich nicht wegklicken</p>
+<p>ließ.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.13/Yade-2026.4.13.zip" sparkle:edSignature="9ElCZD5ZxuyLjh2nWBBq1yN3eo3u1yGaMmw3tb3VYPxmLR5lgBdc5DNGUtvuE30HX1vNBZKaBNe0XJ9yYG92AQ==" length="212982684" type="application/octet-stream" /></item><item><title>Version 2026.4.12</title><pubDate>Mon, 20 Apr 2026 20:47:25 +0000</pubDate><sparkle:version>2026042001</sparkle:version><sparkle:shortVersionString>2026.4.12</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.12</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px"><strong>⚠ Nach dem Update einmal Berechtigung erneuern</strong><br>Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).<ol style="margin:8px 0 0 20px;padding:0"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
 <h4>Changed</h4>
 <ul>
 <li>Code-Signing auf Apple **Developer ID Application** umgestellt mit</li>
@@ -424,8 +472,5 @@
 </ul>
 <p>'ApplicationServices'` because py2app did not include the framework</p>
 <p>in the bundle. Added `pyobjc-framework-ApplicationServices` to</p>
-<p>requirements and `ApplicationServices` to setup.py packages.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.4/Yade-2026.4.4.zip" sparkle:edSignature="KoIQ8ewIO80CYZgaiuIN4xig5bUCCkTPKnlAmtwddqHi9x3tyvA4ie2J7sBbNaDvWuOzenWAO/Swq+Njl3pFAQ==" length="221766959" type="application/octet-stream" /></item><item><title>Version 2026.4.3</title><pubDate>Thu, 16 Apr 2026 17:48:44 +0000</pubDate><sparkle:version>2026041601</sparkle:version><sparkle:shortVersionString>2026.4.3</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><description><![CDATA[<h4>Added</h4>
-<ul>
-<li>Validation release: first end-to-end test of the OTA pipeline.</li>
-</ul>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.3/Yade-2026.4.3.zip" sparkle:edSignature="7feEk6pCAERv7f1oPYDBTdWFRXq+IpgZ3aJOMYhVdcPiwPaE6SSFZByO0ZgnJy1JMUlkFJi1A54zgWUS68pCBg==" length="221695229" type="application/octet-stream" /></item></channel>
+<p>requirements and `ApplicationServices` to setup.py packages.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.4/Yade-2026.4.4.zip" sparkle:edSignature="KoIQ8ewIO80CYZgaiuIN4xig5bUCCkTPKnlAmtwddqHi9x3tyvA4ie2J7sBbNaDvWuOzenWAO/Swq+Njl3pFAQ==" length="221766959" type="application/octet-stream" /></item></channel>
 </rss>
