@@ -5,7 +5,95 @@
     <link>https://y1-digital.github.io/yade-releases/appcast.xml</link>
     <description><![CDATA[Over-the-air update feed for Y.A.D.E.]]></description>
     <language>de</language>
-  <item><title>Version 2026.4.21</title><pubDate>Wed, 22 Apr 2026 09:40:03 +0000</pubDate><sparkle:version>2026042201</sparkle:version><sparkle:shortVersionString>2026.4.21</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.21</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;color:#3e2723;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px;color-scheme:light"><strong style="color:#3e2723">⚠ Nach dem Update einmal Berechtigung erneuern</strong><br><span style="color:#3e2723">Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).</span><ol style="margin:8px 0 0 20px;padding:0;color:#3e2723"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
+  <item><title>Version 2026.4.22</title><pubDate>Wed, 22 Apr 2026 13:05:38 +0000</pubDate><sparkle:version>2026042202</sparkle:version><sparkle:shortVersionString>2026.4.22</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.2</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;color:#3e2723;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px;color-scheme:light"><strong style="color:#3e2723">⚠ Nach dem Update einmal Berechtigung erneuern</strong><br><span style="color:#3e2723">Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).</span><ol style="margin:8px 0 0 20px;padding:0;color:#3e2723"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
+<h4>Added</h4>
+<ul>
+<li>**„Über"-Tab in den Einstellungen**: Neuer Reiter mit App-Icon,</li>
+</ul>
+<p>Version, Copyright und einer Update-Sektion (Auto-Check-Toggle,</p>
+<p>Status „Zuletzt geprüft: …", manueller Prüfen-Button) sowie Links</p>
+<p>zu Changelog und GitHub. Das App-Menü „Über Y.A.D.E." öffnet</p>
+<p>diesen Tab jetzt direkt statt des Standard-About-Panels (H3, C2).</p>
+<ul>
+<li>**Benachrichtigung bei verfügbarem Update**: Findet Y.A.D.E. im</li>
+</ul>
+<p>Hintergrund ein neues Release, signalisiert es das jetzt sichtbar:</p>
+<p>das Menübar-Icon bekommt einen kleinen blauen Punkt, der Menüpunkt</p>
+<p>„Nach Updates suchen…" wechselt zu „Update installieren: X.Y.Z"</p>
+<p>(fett, blau), und einmalig pro Version erscheint eine macOS-</p>
+<p>Notification (H1, M2, M7).</p>
+<ul>
+<li>**Version im Menübar-Menü**: Y.A.D.E. zeigt die installierte Version</li>
+</ul>
+<p>jetzt als disabled Eintrag oben im Menübar-Dropdown und über den</p>
+<p>neuen „Über Y.A.D.E."-Menüpunkt im App-Menü (C2).</p>
+<h4>Changed</h4>
+<ul>
+<li>**Release-Pipeline härter**: Der Workflow verifiziert nach jedem</li>
+</ul>
+<p>Release, dass der neue Eintrag wirklich im Live-Appcast steht (M3).</p>
+<p>Der Appcast behält jetzt die letzten 30 statt 10 Releases (M4).</p>
+<ul>
+<li>**Changelog-Link in der Update-Benachrichtigung** zeigt jetzt auf</li>
+</ul>
+<p>die öffentliche Release-Seite statt auf ein nicht-existentes Repo-</p>
+<p>File (M5).</p>
+<ul>
+<li>**Klarerer Fehler** wenn Sparkle-Modul nicht geladen: statt stummer</li>
+</ul>
+<p>Non-Action zeigt der manuelle Update-Check jetzt einen Hinweis-</p>
+<p>Dialog (M6).</p>
+<ul>
+<li>**Sparkle-Check-Intervall auf 1 h** verkürzt (vorher 24 h) —</li>
+</ul>
+<p>während der aktiven Entwicklung sehen User Updates schneller (L1).</p>
+<ul>
+<li>**Appcast-Einträge werden numerisch nach Version sortiert**, nicht</li>
+</ul>
+<p>mehr nur chronologisch eingefügt — robust gegen nachträgliche</p>
+<p>Re-Releases (L2).</p>
+<ul>
+<li>**Info.plist für Sparkle 2.x bereinigt**: `SUEnableInstallerLauncherService`</li>
+</ul>
+<p>ergänzt (empfohlen für Hardened-Runtime-Apps), der widersprüchliche</p>
+<p>Key `SUAllowsAutomaticUpdates` entfernt. Sparkle-Dialoge erscheinen</p>
+<p>jetzt zusätzlich auf Deutsch, weil `CFBundleDevelopmentRegion=de`</p>
+<p>und `CFBundleLocalizations=[de, en]` gesetzt sind (H2, M1).</p>
+<ul>
+<li>**CI-Benachrichtigung bei fehlgeschlagenen Releases**: Wenn der</li>
+</ul>
+<p>Release-Workflow failed (Notary-Timeout, Signing-Fehler, Billing-</p>
+<p>Issue o. ä.), legt er jetzt automatisch ein GitHub-Issue im</p>
+<p>Code-Repo an, statt still zu scheitern (H4).</p>
+<h4>Fixed</h4>
+<ul>
+<li>**Automatische Update-Checks funktionieren wieder**: Durch Zusammenspiel</li>
+</ul>
+<p>mehrerer Defekte (Appcast-Setting `minimumAutoupdateVersion`, fehlender</p>
+<p>expliziter API-Call, LSUIElement-Consent-Dialog) hat Y.A.D.E. bisher</p>
+<p>praktisch nie automatisch nach Updates gesucht. Sparkle wird jetzt</p>
+<p>explizit via API konfiguriert und prüft beim Launch sofort + dann</p>
+<p>stündlich (siehe Changed-Eintrag weiter oben). Der</p>
+<p>`minimumAutoupdateVersion`-Wert wird auf eine fixe Baseline</p>
+<p>(`2026.4.2`, erster OTA-fähiger Release) gepinnt statt bei jedem</p>
+<p>Release auf sich selbst gesetzt (C1).</p>
+<ul>
+<li>**Kein „Zu kurz"-Overlay mehr** nach einem versehentlich</li>
+</ul>
+<p>kurzen Tastendruck (< 0,2 s Hotkey gehalten). Statt einer</p>
+<p>Fehlermeldung passiert jetzt einfach nichts — der User</p>
+<p>wollte offensichtlich kein Diktat starten.</p>
+<ul>
+<li>**Sparkle-Dialog-Klicks crashen die App nicht mehr**: Ein</li>
+</ul>
+<p>Lifecycle-Fehler (Update-Delegate wurde nicht korrekt am</p>
+<p>Leben gehalten) und eine fehlende Objective-C-Signatur-</p>
+<p>Annotation an der Delegate-Methode führten dazu, dass die</p>
+<p>App mit `EXC_BAD_ACCESS` abstürzte, sobald der User im</p>
+<p>Sparkle-Update-Dialog „Install", „Skip This Version" oder</p>
+<p>den X-Button klickte. Delegate wird jetzt auf Modulebene</p>
+<p>retained und die problematische Methode mit unbekannter</p>
+<p>ObjC-Signatur ist entfernt.</p>]]></description><enclosure url="https://github.com/Y1-Digital/yade-releases/releases/download/v2026.4.22/Yade-2026.4.22.zip" sparkle:edSignature="U2M/2JGVRy0Wizp8kAlvnMM2Lq2bbBVZDQpCclR9CpYh2h0t2H3x4DwxNOiQY8A5l9iF9weB30yfFBOzKg1kBg==" length="214453577" type="application/octet-stream" /></item><item><title>Version 2026.4.21</title><pubDate>Wed, 22 Apr 2026 09:40:03 +0000</pubDate><sparkle:version>2026042201</sparkle:version><sparkle:shortVersionString>2026.4.21</sparkle:shortVersionString><sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion><sparkle:minimumAutoupdateVersion>2026.4.21</sparkle:minimumAutoupdateVersion><description><![CDATA[<div style="background:#fff8e1;border:1px solid #ffb300;color:#3e2723;padding:12px;border-radius:8px;margin-bottom:14px;font-size:13px;color-scheme:light"><strong style="color:#3e2723">⚠ Nach dem Update einmal Berechtigung erneuern</strong><br><span style="color:#3e2723">Bedienungshilfen-Freigabe geht durch das Update verloren (technisch bedingt — wird mit einem Apple Developer-ID-Signing gelöst).</span><ol style="margin:8px 0 0 20px;padding:0;color:#3e2723"><li>Y.A.D.E. beenden (Menübar → „Y.A.D.E. beenden")</li><li>System-Einstellungen → Datenschutz & Sicherheit → Bedienungshilfen</li><li>Y.A.D.E. mit Minus-Button (–) <em>entfernen</em> (nicht nur Toggle)</li><li>Y.A.D.E. neu starten → beim ersten Diktat „Erlauben" klicken</li></ol></div>
 <h4>Fixed</h4>
 <ul>
 <li>**Kein Diktat-Leak mehr in Paste-History-Features** (z. B.</li>
